@@ -7,6 +7,8 @@ import lombok.NoArgsConstructor;
 
 @Entity
 @Table(name = "addresses")
+@Data
+@NoArgsConstructor
 public class Address {
     @Id             //Assigns the addressId as the primary key
     @GeneratedValue(strategy = GenerationType.AUTO)  //Auto Increments the Id
